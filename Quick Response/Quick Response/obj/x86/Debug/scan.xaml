@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="Quick_Response.scan"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Quick_Response"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:ConnectionId='1' x:Name="scann">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/file_5184x3456_000307.jpg"/>
+        </Grid.Background>
+        <Image x:ConnectionId='2' x:Name="name" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,0" Width="350" Source="Assets/file_5184x3456_000307.png"/>
+
+
+        <Canvas Width="640" Height="360">
+            <CaptureElement x:ConnectionId='5' x:Name="VideoCapture" Width="640" Height="360" />
+            <Image x:ConnectionId='6' x:Name="CaptureImage" Width="640" Height="360" Visibility="Collapsed" />
+        </Canvas>
+        <TextBlock x:ConnectionId='3' x:Name="Error" VerticalAlignment="Bottom" FontSize="32" Width="640" TextAlignment="Center" Margin="363,0,363,37" />
+        <TextBlock x:ConnectionId='4' x:Name="ScanResult" VerticalAlignment="Bottom" TextAlignment="Center" FontSize="32" Width="640"/>
+
+
+
+    </Grid>
+</Page>
+

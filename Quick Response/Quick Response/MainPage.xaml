@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Quick_Response.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Quick_Response"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="back">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Assets/file_5184x3456_000307.jpg"/>
+        </Grid.Background>
+        <Image x:Name="name" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10,10,10,0" Width="350" Source="Assets/file_5184x3456_000307.png"/>
+        <Button x:Name="create" Content="Create QR Code" Background="#7cbb00" FontSize="40"  Margin="20,100,20,0" Foreground="White" HorizontalAlignment="Stretch" FontFamily="dolphin" VerticalAlignment="Top" FontWeight="Bold" Click="create_Click"/>
+        <Button x:Name="scan" Content="Scan QR Code" Background="#00a1f1" FontSize="40" Margin="20,200,20,0" Foreground="White" HorizontalAlignment="Stretch" FontFamily="dolphin" VerticalAlignment="Top" FontWeight="Bold" Click="scan_Click"/>
+
+        <HyperlinkButton x:Name="about" Width="330" Height="330" Margin="20,300,20,0" Foreground="White" HorizontalAlignment="Stretch" VerticalAlignment="Top" >
+            <HyperlinkButton.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="Assets/ant.png"/>
+            </HyperlinkButton.Background>
+        </HyperlinkButton>
+
+
+    </Grid>
+</Page>
